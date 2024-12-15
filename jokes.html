@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Jokes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #bd5d38;
+            text-align: center;
+        }
+        #joke {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color:black
+        }
+        #generate-joke {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #bd5d38;;
+            color: white;
+            border: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #generate-joke:hover {
+            background-color: #bd5d38;;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Photography Jokes</h1>
+
+<div id="joke"></div>
+
+<button id="generate-joke">Generate Joke</button>
+
+<script>
+    // List of photography jokes
+    const jokes = [
+        "Why did the photographer break up with his girlfriend? Because he was looking for someone with better exposure.",
+        "Why do photographers make great partners? Because they always focus on you.",
+        "What did the camera say to the photographer? 'You're always focusing on me, but I'm the one who's really framing this relationship.'",
+        "Why did the photographer go to the doctor? He was feeling a little out of focus.",
+        "What do you call a photographer who doesn’t like mornings? A late developer."
+    ];
+
+    // Function to generate a random joke
+    function generateJoke() {
+        const jokeElement = document.getElementById('joke');
+        const randomIndex = Math.floor(Math.random() * jokes.length);
+        jokeElement.innerText = jokes[randomIndex];
+    }
+
+    // Add event listener to the button
+    document.getElementById('generate-joke').addEventListener('click', generateJoke);
+
+    // Generate a joke on page load
+    generateJoke();
+</script>
+
+</body>
+</html>

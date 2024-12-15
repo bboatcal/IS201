@@ -1,0 +1,26 @@
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{ 
+    font-family: "Segoe UI";
+    margin-top: 90px;
+}
+p{ 
+    font-family: "opera 3";
+    font-size: large;
+    color: black
+}
+a{ 
+    font-family: "helvetica";
+    font-size: large;
+}
+.mb-5{ 
+    font-family: "opera 3";
+    font-size: x-large
+}
+body{ 
+    background-color:white;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{ 
+    margin-top: 0px;
+}
+.h2{ 
+    padding-inline: 20px;
+}
